@@ -1,5 +1,5 @@
-# Use the current Long Term Support (LTS) version of Node.js
-FROM node:lts
+# Use the current Long Term Support (LTS) version of Node.js able to run in unpriviliged environments
+FROM bitnami/node:18
 
 # Copy the signalling server and frontend source code from the build context
 COPY /SignallingWebServer /SignallingWebServer
